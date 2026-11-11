@@ -1,0 +1,25 @@
+UPSI CONFERENCE WEB APP — START HERE
+
+1. Make a BACKUP of your Master spreadsheet.
+2. Open https://script.google.com/home/projects/create → NEW standalone project.
+   Do NOT replace old Code.gs or existing Form triggers.
+3. Paste Backend.gs as the Apps Script backend (in Code.gs or Backend.gs).
+4. Add an HTML file named Index → paste Index.html.
+5. In Project Settings → Script Properties, set:
+     SHEET_ID = your existing Master spreadsheet ID
+     PORTAL_ADMIN_EMAILS = your Chief Reviewer's full Google email
+6. Save, then run portal27HealthCheck once as the administrator to authorise.
+7. Deploy as Web app: Execute as ME (institutional admin), access LIMITED TO
+   YOUR GOOGLE WORKSPACE ORGANISATION. Never public/anonymous.
+8. Open web-app URL as Chief Reviewer; then test with a SAME-DOMAIN co-chair.
+9. Verify one genuinely paid poster; assign; have reviewer rate; check EVALUATION_RESPONSES.
+
+IMPORTANT: This first release supports UPSI-domain reviewer accounts. External
+reviewers need a dedicated verified-authentication solution. Do not distribute
+private spreadsheet access to reviewers as a shortcut.
+
+For full details, see README.md.
+
+OPTIONAL PUBLIC SUBMISSION LINK:
+Push this project to a GitHub repository; enable GitHub Pages from main /docs.
+This publishes the participant landing page, NOT private reviewer data.
